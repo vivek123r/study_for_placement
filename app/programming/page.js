@@ -72,10 +72,10 @@ export default function ProgrammingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500">
+    <div className="min-h-screen bg-linear-to-br from-purple-500 via-pink-500 to-red-500">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <header className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-10 px-6 text-center rounded-b-3xl shadow-2xl">
+        <header className="bg-linear-to-r from-purple-600 to-pink-600 text-white py-10 px-6 text-center rounded-b-3xl shadow-2xl">
           <Link href="/" className="inline-block mb-4 text-white/80 hover:text-white transition-colors">
             ← Back to Home
           </Link>
@@ -105,7 +105,7 @@ export default function ProgrammingPage() {
           <div className="bg-white rounded-3xl shadow-2xl p-8">
             {/* Stats */}
             {activeTab !== 'practice' && (
-              <div className="grid grid-cols-3 gap-6 mb-10 bg-gradient-to-r from-purple-500 to-pink-600 text-white p-8 rounded-2xl">
+              <div className="grid grid-cols-3 gap-6 mb-10 bg-linear-to-r from-purple-500 to-pink-600 text-white p-8 rounded-2xl">
                 <div className="text-center">
                   <div className="text-4xl font-bold">{getCurrentContent().length}</div>
                   <div className="text-sm opacity-90">Topics</div>
@@ -127,7 +127,7 @@ export default function ProgrammingPage() {
                 {getCurrentContent().map((topic) => (
                   <div
                     key={topic.id}
-                    className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-purple-200 hover:border-purple-400"
+                    className="bg-linear-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-purple-200 hover:border-purple-400"
                   >
                     <div className="flex items-start gap-4">
                       <span className="text-4xl">{topic.icon}</span>
@@ -153,7 +153,7 @@ export default function ProgrammingPage() {
                 {practiceProblems.map((category) => (
                   <div
                     key={category.id}
-                    className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-2 border-purple-200"
+                    className="bg-linear-to-r from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-2 border-purple-200"
                   >
                     <div className="flex items-center justify-between flex-wrap gap-4">
                       <div className="flex items-center gap-4">
